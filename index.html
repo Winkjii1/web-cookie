@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Cookie</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #FDF5E6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo a {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #5D4037;
+            font-weight: bold;
+        }
+
+        .banner {
+            position: relative;
+            height: 30vh; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #5D4037;
+        }
+
+        .banner-info h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .banner-info p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: #5D4037;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #FF7043;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            object-fit: cover;
+        }
+
+        ul.ingredients-list {
+            list-style: none;
+        }
+
+        ul.ingredients-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+        }
+        
+        ul.ingredients-list li::before {
+            content: "🍪";
+            margin-right: 10px;
+        }
+
+        .step-item {
+            margin-bottom: 2rem;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #FF7043;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .tips {
+            background-color: #8D6E63;
+            color: #ffffff;
+        }
+        
+        .tips h3 {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .tips ul {
+            padding-left: 20px;
+        }
+        
+        .tips li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #5D4037;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer li {
+            list-style: none;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr; 
+            }
+            
+            .banner-info h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="#">Easy Cookie 🍪</a>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="banner-info">
+            <h1>The Best Chocolate Chip Cookie Recipes</h1>
+            <p>It's very easy to make cookies.</p>
+        </div>
+    </section>
+    <main>
+        
+        <aside>
+            <div class="card">
+                <h3>Ingredients</h3>
+                <ul class="ingredients-list">
+                    <li>เแป้งสาลีอเนกประสงค์ = 200 กรัม</li>
+                    <li>เนยเค็มละลาย = 100 กรัม</li>
+                    <li>น้ำตาลทรายแดง = 45 กรัม</li>
+                    <li>น้ำตาลทรายขาว = 50 กรัม</li>
+                    <li>ไข่เบอร์ 1 = 1 ฟอง</li>
+                    <li>กลิ่นวานิลลา = 1 ช้อนชา</li>
+                    <li>เบคกิ้งโซดา = 1/2 ช้อนชา</li>
+                    <li>ช็อคโกแลตชิพ = 115 กรัม</li>
+                </ul>
+                <img src="https://www.crazyforcrust.com/wp-content/uploads/2018/07/Ingredients-in-best-chocolate-chip-cookie-recipe-768x512.jpg" class="content-img" alt="Ingredients">
+            </div>
+
+            <div class="card tips">
+                <h3>How to eat better</h3>
+                <ul>
+                    <li>กินคู่กับนมสด</li>
+                    <li>ใช้ไอศกรีมเพิ่มความอร่อย</li>
+                    <li>จิ้มน้ำผึ้งหรือช็อกโกแลตซอส</li>
+                    <li>กินกับกาแฟดำหรือชา</li>
+                </ul>
+            </div>
+        </aside>
+
+        <article>
+            <div class="card">
+                <h3>Directions</h3>
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1000&auto=format&fit=crop" class="content-img" alt="Cookies baking">
+                
+                <div class="step-item">
+                    <span class="step-title">Chocolate Chip Cookie</span>
+                    <p>1. เตรียมส่วนผสมให้พร้อม</p>
+                    <p>2. นำเนยละลายมาผสมรวมกับน้ำตาลทรายแดงและน้ำตาลทรายขาวคนให้เข้ากัน</p>
+                    <p>3. ตามด้วยไข่ไก่และกลิ่นวนิลลาลงไปผสมให้เนียน</p>
+                    <p>4. ร่อนแป้งหรือตะล่อมให้เนื้อแป้งฟูเนียนแล้วเติมลงในของเหลวที่เตรียมไว้ ตามด้วยเบกกิ้งโซดา คนให้เข้ากัน</p>
+                    <p>5. ใส่ช็อกโกแลตชิพเข้าไปตะล่อมเบาๆให้ทั่วถึง แล้วนำไปพักในตู้เย็น 1 ชั่วโมง</p>
+                    <p>6. นำมาแบ่งเป็นก้อนกลมก้อนละ 20 กรัม หรือตามชอบ วางให้ห่างจากกันเพราะตอนอบเค้าจะขยายตัวบานขึ้น แอบกดด้านบนนิดนึงช่วยเค้า</p>
+                    <p>7. นำไปอบที่อุณหภูมิ 180 องศา 12-15 นาที ไฟบนล่าง ไม่ใช่พัดลม</p>
+                    <p>8. ครบเวลาพักไว้บนถาดซัก 10 นาที แล้วนำไปพักให้เย็นบนตะแกรงต่อ ก็ได้คุกกี้อร่อยๆฝีมือตัวเองแล้วค่า</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <p>จัดทำโดย นายธนโชติ เยี่ยมสระน้อย</p>
+        <p>&copy; 2025 Winkjii Easy Cookie Project</p>
+    </footer>
+    </body>
+</html>
